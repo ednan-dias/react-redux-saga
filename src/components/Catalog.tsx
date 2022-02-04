@@ -16,7 +16,7 @@ export function Catalog() {
     <div>
       <h1>Catalog</h1>
       {catalog.map((product) => (
-        <CatalogItem product={product} />
+        <CatalogItem key={product.id} product={product} />
       ))}
     </div>
   );
